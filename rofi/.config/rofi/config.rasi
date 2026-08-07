@@ -1,0 +1,78 @@
+configuration {
+    modi: "run";
+    lines: 8;
+    show-icons: false;
+    font: "MesloLGS Nerd Font 14";
+}
+
+entry {
+    placeholder: "";
+}
+
+prompt {
+    enabled: false;    
+}
+
+* {
+    bg-col:      #4a217055;   /* darker base purple */
+    bg-col-alt:  #5d2a8a55;   /* original purple, slightly lighter */
+    fg-col:      #f3f4f5;
+    fg-col2:     #e4d9f5;   /* faint lavender tint for alt rows */
+    hl-bg:       #7440a855;   /* brighter purple for selected row bg */
+    hl-fg:       #d1b3ff;   /* light lilac for selected row text */
+
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+window {
+    width: 35%;
+    border: 2px;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: @bg-col;
+}
+
+inputbar {
+    background-color: @bg-col;
+    text-color: @fg-col;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+entry {
+    background-color: @bg-col;
+    text-color: @fg-col;
+    placeholder-color: @fg-col;
+}
+
+listview {
+    background-color: @bg-col;
+    lines: 8;
+}
+
+element {
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+element normal.normal {
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+element alternate.normal {
+    background-color: @bg-col-alt;
+    text-color: @fg-col2;
+}
+
+element selected.normal {
+    background-color: @hl-bg;
+    text-color: @hl-fg;
+}
