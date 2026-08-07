@@ -102,6 +102,10 @@ cd "$DOTFILES_DIR"
 stow i3 || true
 stow i3blocks || true
 stow nvim || true
+stow kitty || true
+stow gtk-3.0 || true
+stow neofetch || true
+stow rofi || true
 
 # Post-install notes
 cat <<EOF
