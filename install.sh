@@ -24,5 +24,6 @@ echo "Symlinking dotfiles with stow..."
 cd "$DOTFILES_DIR"
 stow i3
 stow i3blocks
+stow nvim
 
 echo "Done. Reload i3 with mod+shift+c or restart your session."
