@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
-echo "Installing packages..."
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+echo "Installing packages from packages.txt..."
 sudo apt update
-sudo apt install -y i3 i3blocks flameshot brightnessctl playerctl \
-  network-manager dex xss-lock scrot feh rofi kitty stow \
-  sysstat python3-venv git
+xargs -a "$DOTFILES_DIR/packages.txt" sudo apt install -y
 
 echo "Installing i3blocks-contrib scripts..."
 git clone --depth 1 https://github.com/vivien/i3blocks-contrib.git /tmp/i3blocks-contrib
@@ -21,9 +21,8 @@ python3 -m venv ~/.venvs/spotify-i3blocks
 ~/.venvs/spotify-i3blocks/bin/pip install i3blocks-mpris
 
 echo "Symlinking dotfiles with stow..."
-cd ~/dotfiles
+cd "$DOTFILES_DIR"
 stow i3
 stow i3blocks
 
 echo "Done. Reload i3 with mod+shift+c or restart your session."
-
