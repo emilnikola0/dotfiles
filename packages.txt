@@ -1,0 +1,16 @@
+i3
+i3blocks
+flameshot
+brightnessctl
+playerctl
+network-manager-gnome
+dex
+xss-lock
+scrot
+feh
+rofi
+kitty
+stow
+sysstat
+python3-venv
+git
