@@ -1,5 +1,10 @@
+# packages.txt — APT packages to install for this dotfiles setup
+# Generated/updated based on install.sh, conversation notes, and shell history provided.
+# Keep one package per line. Comments start with '#'.
+
 i3
 i3blocks
+i3lock
 flameshot
 brightnessctl
 playerctl
@@ -12,5 +17,36 @@ rofi
 kitty
 stow
 sysstat
+neovim
+neofetch
 python3-venv
+python3.12-venv
+python3-pip
+pipx
 git
+imagemagick
+pulseaudio-utils
+flatpak
+thunar
+fonts-firacode
+fontconfig
+curl
+wget
+build-essential
+pkg-config
+libdbus-1-dev
+libglib2.0-dev
+libgirepository1.0-dev
+libgirepository-2.0-dev
+girepository-2.0
+gobject-introspection
+libcairo2-dev
+python3-gi
+python3-gi-cairo
+autoconf
+maim
+xclip
+xsel
+os-prober
+
+# End of list
