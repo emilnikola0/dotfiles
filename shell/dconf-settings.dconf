@@ -1,0 +1,115 @@
+[apps/light-locker]
+idle-hint=false
+late-locking=false
+lock-after-screensaver=uint32 5
+lock-on-lid=false
+lock-on-suspend=true
+
+[apps/overgrive]
+mime-ext-document='docx'
+mime-ext-drawing='svg'
+mime-ext-presentation='pptx'
+mime-ext-spreadsheet='xlsx'
+remove-items='True'
+
+[com/linuxmint/install]
+flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
+installed-apps=['apt:arandr', 'apt:bat', 'apt:boot-repair', 'apt:cmake', 'apt:feh', 'apt:flameshot', 'apt:git', 'apt:i3', 'apt:kicad', 'apt:kitty', 'apt:ngspice', 'apt:playerctl', 'apt:rclone', 'apt:texlive', 'apt:texlive-font-utils', 'apt:texlive-lang-czechslovak', 'apt:texlive-lang-greek', 'apt:texlive-latex-extra', 'apt:texlive-plain-generic', 'apt:texstudio', 'apt:tmux', 'apt:tree', 'apt:vim', 'fp:flathub:app/com.discordapp.Discord/x86_64/stable', 'fp:flathub:app/com.spotify.Client/x86_64/stable', 'fp:flathub:app/com.github.IsmaelMartinez.teams_for_linux/x86_64/stable']
+
+[com/linuxmint/updates]
+refresh-last-run=1786124289
+show-welcome-page=false
+window-height=1761
+window-pane-position=228
+window-width=2876
+
+[org/blueman/general]
+window-properties=[958, 1754, 1922, 22]
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+gtk-theme='Adwaita-dark'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=1725
+window-width=950
+
+[org/gnome/nm-applet/eap/3fe88975-27f1-4a90-8ef1-6ce1db0c78d4]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/49d52f20-d9cf-4bad-9527-4e30d1fd82ca]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/7351a42d-aa69-4cb5-aab3-98bcbe22a18c]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ea23e1fb-b437-4da9-9991-6e02449aa451]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/f7571eeb-3ad4-4ba6-8e81-1592ef3c7687]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.11764705882352941, 0.11764705882352941, 0.1803921568627451, 1.0)]
+selected-color=(true, 0.38039215686274508, 0.20784313725490197, 0.51372549019607838, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=189
+sort-column='name'
+sort-directories-first=true
+sort-order='descending'
+type-format='category'
+window-position=(890, 465)
+window-size=(1096, 822)
+
+[org/x/editor/plugins]
+active-plugins=['bracketcompletion', 'joinlines', 'sort', 'docinfo', 'filebrowser', 'spell', 'open-uri-context-menu', 'modelines', 'time', 'textsize']
+
+[org/x/editor/plugins/filebrowser/on-load]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/emiln/Downloads'
+
+[org/x/editor/preferences/ui]
+statusbar-visible=true
+
+[org/x/editor/state/window]
+bottom-panel-size=140
+side-panel-active-page=827629879
+side-panel-size=200
+size=(650, 500)
+state=128
+
+[org/x/reader/default]
+window-ratio=(1.8131313131313131, 2.2234848484848486)
+
+[org/x/viewer/ui]
+statusbar=true
+toolbar=true
+
+[org/x/warpinator/preferences]
+ask-for-send-permission=true
+autostart=false
+connect-id='EMILN-HP-SPECTRE-X360-2-IN-1-LAPTOP-16-AA0-6667587910FF0C54EFF2'
+no-overwrite=true
