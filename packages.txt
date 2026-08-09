@@ -49,3 +49,4 @@ xclip
 xsel
 os-prober
 fzf
+redshift

@@ -202,6 +202,20 @@ grep -q '^GRUB_GFXPAYLOAD_LINUX=' /etc/default/grub \
 
 update-grub
 
+# --- Redshift integration
+echo "Getting redshift to work interactively in i3bar"
+# Make sure the block script is executable
+chmod +x ~/.config/i3blocks/scripts/redshift-block.sh
+
+# Clear any stale state/pid files from previous runs (safe on fresh installs too)
+rm -f /tmp/redshift-block-state /tmp/redshift-block-pid
+
+# Make sure no orphaned redshift processes are left running
+pkill -9 -f redshift 2>/dev/null
+
+# Reset display to neutral color, in case redshift left a tint applied
+redshift -x >/dev/null 2>&1
+
 # Post-install notes
 cat <<EOF
 Install complete (best-effort). Next manual steps you may want to perform:

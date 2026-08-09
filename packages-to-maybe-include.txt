@@ -1,0 +1,82 @@
+sudo apt install -y boot-repair
+sudo apt install -y boot-repair && boot-repair
+sudo apt install --install-recommends kicad
+sudo apt install --install-recommends kicad
+sudo apt install git
+sudo apt install ./code_1.127.0-1782814776_amd64.deb
+sudo apt update && sudo apt install signal-desktop\
+sudo apt install vim
+sudo apt install libncurses5t64
+sudo apt install libncurses5 libtinfo5
+apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+sudo apt install cargo
+sudo apt install curl build-essential
+sudo apt install alacritty
+sudo apt install yay
+sudo apt install fastfetch
+sudo apt install fastfetch
+sudo apt install tmux
+sudo apt install kitty
+sudo apt install ngspice
+sudo apt install ngspice-dev
+sudo apt install rclone
+sudo apt install dnf
+sudo apt install texlive texstudio texlive-plain-generic texlive-latex-extra texlive-lang-czechslovak texlive-lang-greek texlive-font-utils
+sudo apt install i3
+sudo apt install playerctl
+sudo apt install feh
+sudo apt install arandr
+sudo apt install flameshot
+sudo apt install rclone-browser 
+sudo apt install brightnessctl 
+sudo apt install picom
+sudo apt install lxappearence
+sudo apt install lxappearance
+sudo apt install neovim
+sudo apt install rofi
+sudo apt install compton
+sudo apt install imagemagickck
+sudo apt install imagemagick
+sudo apt install util-linux
+sudo apt install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev libgif-dev
+sudo apt install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev libgif-dev
+sudo apt install wmctrl
+sudo apt install scrot
+sudo apt install i3blocks 
+sudo apt install os-prober 
+sudo apt install i3lock xss-lock
+sudo apt install xclip
+sudo apt install xsel
+sudo apt install python3-pip
+sudo apt install python3.12-venv 
+sudo apt install libdbus-1-dev pkg-config
+sudo apt install libglib2.0-dev
+sudo apt install libgirepository1.0-dev gobject-introspection libcairo2-dev
+sudo apt install pipx
+sudo apt install girepository-2.0
+sudo apt install     gobject-introspection     libgirepository1.0-dev     libcairo2-dev     libglib2.0-dev     pkg-config     build-essential
+sudo apt install -y python3-gi python3-gi-cairo
+sudo apt install libgirepository-2.0-dev
+sudo apt install autoconf pkg-config libglib2.0-dev
+sudo apt install maim xclip
+sudo apt install stow git
+history | grep "apt install"
+history | grep apt install
+history | grep "apt install"
+sudo apt install fastfetch
+sudo apt install hyfetch 
+sudo apt install yayf
+sudo apt install fzy
+sudo apt install fzf
+cat .bash_history | grep "apt install"
+cat .bash_history | grep "apt install"
+cat .bash_history | grep -a "apt install"
+sudo apt install redshift
+cat /home/emiln/.bash_history | grep apt install
+cat /home/emiln/.bash_history | grep "apt install"
+cat /home/emiln/.bash_history | grep --b "apt install"
+cat /home/emiln/.bash_history | grep -b "apt install"
+cat /home/emiln/.bash_history | grep -c "apt install"
+sudo apt install geoclue2
+sudo apt install geoclue-2.0 
+cat /home/emiln/.bash_history | grep -I "apt install"

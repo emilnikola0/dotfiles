@@ -52,6 +52,12 @@ command=brightnessctl -m | grep -oe "\w\+%"
 interval=1
 signal=10
 
+[redshift]
+label=🌙
+command=/home/emiln/.config/i3blocks/scripts/redshift-block.sh
+interval=5
+signal=10
+
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.

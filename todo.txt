@@ -1,0 +1,4 @@
+better battery saver
+look closer into bashrc
+better adjust program workspace allocations for 2nd monitor
+
