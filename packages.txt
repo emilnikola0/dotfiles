@@ -48,5 +48,4 @@ maim
 xclip
 xsel
 os-prober
-
-# End of list
+fzf

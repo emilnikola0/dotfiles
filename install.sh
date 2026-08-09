@@ -177,6 +177,31 @@ else
   done
 fi
 
+# --- Fallout GRUB theme ---
+echo "setting up grub theme"
+THEME_DIR="/boot/grub/themes/fallout"
+
+mkdir -p /boot/grub/themes
+if [[ -d "$THEME_DIR/.git" ]]; then
+    git -C "$THEME_DIR" pull
+else
+    git clone https://github.com/shvchk/fallout-grub-theme.git "$THEME_DIR"
+fi
+
+grep -q '^GRUB_THEME=' /etc/default/grub \
+    && sed -i "s|^GRUB_THEME=.*|GRUB_THEME=\"$THEME_DIR/theme.txt\"|" /etc/default/grub \
+    || echo "GRUB_THEME=\"$THEME_DIR/theme.txt\"" >> /etc/default/grub
+
+grep -q '^GRUB_GFXMODE=' /etc/default/grub \
+    && sed -i "s|^GRUB_GFXMODE=.*|GRUB_GFXMODE=1024x768|" /etc/default/grub \
+    || echo "GRUB_GFXMODE=1024x768" >> /etc/default/grub
+
+grep -q '^GRUB_GFXPAYLOAD_LINUX=' /etc/default/grub \
+    && sed -i "s|^GRUB_GFXPAYLOAD_LINUX=.*|GRUB_GFXPAYLOAD_LINUX=keep|" /etc/default/grub \
+    || echo "GRUB_GFXPAYLOAD_LINUX=keep" >> /etc/default/grub
+
+update-grub
+
 # Post-install notes
 cat <<EOF
 Install complete (best-effort). Next manual steps you may want to perform:
@@ -186,6 +211,7 @@ Install complete (best-effort). Next manual steps you may want to perform:
 - If i3lock-fancy is used but not available, either install it or adjust xss-lock to use i3lock.
 
 If something failed earlier in the script, review the warnings above and re-run after fixing missing dependencies.
+.bashrc is just installed thru #https://www.youtube.com/watch?v=D6HmEi9C5K8, then edided, for now its done badly
 EOF
 
 echo "Done. Reload i3 with mod+shift+c or restart your session."
