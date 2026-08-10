@@ -18,17 +18,11 @@ LOCATION="49.59:17.25"   # lat:lon — avoids slow/hanging geoclue2 lookup
 if [[ "$BLOCK_BUTTON" == "1" ]]; then
     if [[ -f "$STATE_FILE" ]]; then
         # currently on -> turn off
-        if [[ -f "$PID_FILE" ]]; then
-            kill "$(cat "$PID_FILE")" 2>/dev/null
-            rm -f "$PID_FILE"
-        fi
         redshift -x >/dev/null 2>&1  # reset screen to no adjustment
         rm -f "$STATE_FILE"
     else
         # currently off -> turn on
-        nohup redshift -l "$LOCATION" -t 6500:3000 -r >/dev/null 2>&1 &
-        echo "$!" > "$PID_FILE"
-        disown
+        redshift -O 3000 >/dev/null 2>&1
         touch "$STATE_FILE"
     fi
 fi
